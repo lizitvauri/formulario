@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <main>
+        <h1>Formulari de registre</h1>
+        <p class="introduccio"> Omple el formulari per registrar-te a l'activitat.</p></main>
+       <form action="https://m0373ac3.free.nf/processa.php" method="get">
+            <fieldset> 
+                <legend> Dades Personals</legend>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="cognom">Cognom:</label>
+                <input type="text" id="cognom" name="cognom">
+                <label for="correu">Correu:</label>
+                 <input type="text" id="correu" name="correu">
+                 <label for="contrasenya"> Contrasenya:</label>
+                <input type="password" id="contrasenya" name="Contrasenya">
+                <label for="edat">Edat:</label>
+                <input type="number" id="edat" name="edat" min="14" max="100" required>>
+                <label for="Data de naixement"> Data de naixement:</label>
+                <input type="date" id="Data de naixement" name="Data de naixement">
+                <label for="Telèfon">Telèfon</label>
+                <input type="tel" id="Telèfon" name="Telèfon">
+                <label for="Pàgina web">Pàgina web</label>
+                <input type="url" id="Pàgina web" name="Pàgina web" placeholder="https://exemple.com">
+                </fieldset>
+           <fieldset><legend>Preferències</legend>
+           <label for="Color preferit">Color preferit</label>
+           <input type="color" id="Color preferit" name="Color preferit" value="#0d6efd">
+
+
+           <label for="Quant t'agrada programar?">Quant t'agrada programar?</label> <p>Seleccionar un valor de 1 al 10</p>
+           <label for="Valoració">Valoració</label>
+           <input type="range" id="Quant t'agrada programar?" name="Quant t'agrada programar?" value="5" min="1" MAX="10">
+           <p>Genère</p>
+           <div class="opcions">
+            <div class="opcio">
+                <input type="radio" id="home" name="Genère" value="home">
+                <label for="Home">Home</label>
+           </div>
+           <div class="opcio">
+            <input type="radio" id="Dona" name="Genère" value="Dona">
+            <label for="Dona">Dona</label>
+           </div>
+           <div class="opcio">
+            <input type="radio" id="Altre" name="Altre" value="Altre">
+            <label for="Altre">Altre</label>
+           </div>
+        </div>
+           
+           <p>Aficions:</p>
+           <div class="opcions">
+        <div class="opcio">
+            <input type="checkbox" id="programacio" name="aficions" value="programacio">
+            <label for="programacio">Programació</label>
+        </div>
+        <div class="opcio">
+            <input type="checkbox" id="videojocs" name="aficions" value="videojocs">
+            <label for="videojocs">Videojocs</label>
+        </div>
+        <div class="opcio">
+            <input type="checkbox" id="esport" name="aficions" value="esport">
+            <label for="esport">Esport</label>
+        </div>
+        <div class="opcio">
+            <input type="checkbox" id="musica" name="aficions" value="musica">
+            <label for="musica">Música</label>
+    </div>
+</div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Localització</legend>
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+        <option value="">Selecciona un país</option>
+        <option value="espanya">Espanya</option>
+        <option value="franca">França</option>
+        <option value="italia">Itàlia</option>
+        <option value="portugal">Portugal</option>
+        <option value="alemanya">Alemanya</option>
+        <option value="regne_unit">Regne Unit</option>
+    </select>
+
+    <br><br>
+
+    <label for="municipi">Municipi:</label>
+    <input type="text" id="municipi" name="municipi" list="municipis" required>
+
+    <datalist id="municipis">
+        <option value="Barcelona">
+        <option value="Girona">
+        <option value="Lleida">
+        <option value="Tarragona">
+        <option value="Badalona">
+        <option value="Sabadell">
+        <option value="Terrassa">
+        <option value="Mataró">
+    </datalist>
+</fieldset>
+<fieldset>
+    <legend>Informació Adicional</legend>
+    <label for="Comentaris">Comentaris:</label>
+    <textarea id="Comentaris" name="Comentaris" placeholder="Escriu els teus comentaris aquí..."></textarea>
+    <label for="fitxer">fitxer:</label>
+    <input type="file" id="fitxer" name="fitxer">
+    <div class="opció">
+        <input type="checkbox" id="condicions" name="condicions" required>
+        <label for="condicions">Accepto les condicions de la inscripció.</label>
+    </div>
+</fieldset>
+<input type="submit" value="Enviar">
+<input type="reset" value="Netejar">
+</form>
+</body>
+</html>
